@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# _*_ coding: utf-8 _*_
+# -*- coding: utf-8 -*-
 
 import os, getpass  # 调用os、getpass模块
 if not os.path.exists('blacklist.txt'):     # 判断本地是否有文件，没有创建一个新的。
