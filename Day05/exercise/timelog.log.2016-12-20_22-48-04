@@ -1,0 +1,6 @@
+2016-12-20 22:48:04,351 logging_rotating:21 test1
+2016-12-20 22:48:04,352 logging_rotating:22 test12
+2016-12-20 22:48:06,354 logging_rotating:24 test13
+2016-12-20 22:48:06,354 logging_rotating:25 test14
+2016-12-20 22:48:08,357 logging_rotating:27 test15
+2016-12-20 22:48:08,357 logging_rotating:28 test16

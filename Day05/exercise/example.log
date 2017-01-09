@@ -1,0 +1,3 @@
+WARNING:root:user [alex] attempted wrong password more than 3 times
+ERROR:root:test error
+CRITICAL:root:server is down

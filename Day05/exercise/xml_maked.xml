@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<NameList><name enrolled="yes">
+    Will
+    <age>18</age>
+    <role>Manage</role>
+</name>
+    <name2 hehe="233">
+        idiot
+        <age>1000</age>
+        <role>homeless</role>
+    </name2>
+</NameList>
