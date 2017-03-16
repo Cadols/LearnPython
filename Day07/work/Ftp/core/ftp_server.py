@@ -52,7 +52,7 @@ class FtpServer(object):
             func(args[1])
 
     def put(self, *args):
-        """接收 put 命令并向"""
+        """接收 put 命令并接收客户端文件"""
         # print("put_args = ", args)
         put_file_path = os.path.join(self.pwd_path, args[0])
         # print(put_file_path)

@@ -24,15 +24,19 @@ class User(object):
 class Account(object):
     """账户工具"""
     def __init__(self):
-        if os.path.exists(ACCOUNT_DB_PATH):
+        if os.path.exists(ACCOUNT_DB_PATH) and os.stat(ACCOUNT_DB_PATH).st_size != 0:  # 文件存在且不为空时
             self.user_db = pickle.load(open(ACCOUNT_DB_PATH, 'rb'))
+        elif not os.path.exists(ACCOUNT_DB_PATH):  # 如果没有用户数据文件，创建空文件
+            os.mkdir(DB_PATH)
+            open(ACCOUNT_DB_PATH, 'w').close()
+            self.user_db = {}
         else:
-            open(ACCOUNT_DB_PATH, 'w').close()  # 如果没有用户数据文件，创建空文件
             self.user_db = {}
 
     def register(self):
         """注册新用户"""
         print("\n" + "这是个注册界面".center(30, "-"))
+        print(self.user_db)
         new_name = input("\033[34m请输入您的注册用户名：\033[0m").strip()
         if new_name in self.user_db:
             print("\033[1;31m用户 %s 已经注册。\033[0m" % new_name)
