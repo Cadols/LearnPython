@@ -36,7 +36,7 @@ class Account(object):
     def register(self):
         """注册新用户"""
         print("\n" + "这是个注册界面".center(30, "-"))
-        print(self.user_db)
+        # print(self.user_db)
         new_name = input("\033[34m请输入您的注册用户名：\033[0m").strip()
         if new_name in self.user_db:
             print("\033[1;31m用户 %s 已经注册。\033[0m" % new_name)

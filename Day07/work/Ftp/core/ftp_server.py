@@ -148,7 +148,7 @@ class FtpServer(object):
         self.conn.send(msg.encode('utf-8'))
 
     def mkdir(self, *args):
-        print("mkdir_args = ", args)
+        # print("mkdir_args = ", args)
         new_dir = os.path.join(self.pwd_path, args[0])
         if os.path.exists(new_dir):
             msg = "\033[1;31m文件夹 %s 已存在。\033[0m" % args[0]
