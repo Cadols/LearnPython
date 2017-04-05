@@ -11,7 +11,7 @@ def light():
     count = 0
     event.set()  # 先设置为绿灯
     while True:
-        if count > 5 and count < 10: # 变为红灯
+        if count > 5 and count < 10:  # 变为红灯
             event.clear()
             print("\033[1;41mRed light is turned on.\033[0m")
         elif count > 10:
